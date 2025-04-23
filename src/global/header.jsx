@@ -8,6 +8,7 @@ import {
   Button,
   Paper,
   Drawer,
+  Modal,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import React, { useState, useEffect } from "react";
@@ -30,12 +31,8 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
+  const [modalOpen, setModalOpen] = useState(false);
   const navigate = useNavigate();
-  // const location = useLocation(); // Получаем текущий путь
-
-  // Используем хранилище Zustand для поиска
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -48,69 +45,70 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="sticky" sx={{ background: "white", p: 1 }}>
-      <Container>
-        <StyledToolbar>
-          <Box
-            sx={{
-              width: "100%",
-              display: "flex",
-              gridGap: 20,
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <Box sx={{ display: "flex", gridGap: 20 }}>
-              <Logo />
+    <>
+      <AppBar position="sticky" sx={{ background: "white", p: 1 }}>
+        <Container>
+          <StyledToolbar>
+            <Box
+              sx={{
+                width: "100%",
+                display: "flex",
+                gridGap: 20,
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Box sx={{ display: "flex", gridGap: 20 }}>
+                <Logo />
+              </Box>
+              <Box>
+                <Navigation />
+              </Box>
+              <Box sx={{ display: "flex", alignItems: "center", gridGap: 20 }}>
+                <ContactMenu />
+              </Box>
             </Box>
-            <Box>
-              <Navigation />
-            </Box>
-            <Box sx={{ display: "flex", alignItems: "center", gridGap: 20 }}>
-              <ContactMenu />
-            </Box>
-          </Box>
-        </StyledToolbar>
-      </Container>
-      <Toolbar
-        sx={{
-          display: { xs: "flex", sm: "flex", md: "flex", lg: "none" },
-          flexDirection: "column",
-          gridGap: "20px",
-        }}
-      >
-        <Box
+          </StyledToolbar>
+        </Container>
+        <Toolbar
           sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            width: "100%",
+            display: { xs: "flex", sm: "flex", md: "flex", lg: "none" },
+            flexDirection: "column",
+            gridGap: "20px",
           }}
         >
-          <Logo />
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={toggleDrawer(true)}
+          <Box
             sx={{
-              display: {
-                xs: "block",
-                sm: "block",
-                md: "block",
-                lg: "none",
-                color: "#1E90FF",
-              },
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "100%",
             }}
           >
-            <MenuIcon fontSize="large" />
-          </IconButton>
-        </Box>
-
-        <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
-          <BurgerMenu />
-        </Drawer>
-      </Toolbar>
-    </AppBar>
+            <Logo />
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={toggleDrawer(true)}
+              sx={{
+                display: {
+                  xs: "block",
+                  sm: "block",
+                  md: "block",
+                  lg: "none",
+                  color: "#1E90FF",
+                },
+              }}
+            >
+              <MenuIcon fontSize="large" />
+            </IconButton>
+          </Box>
+          <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
+            <BurgerMenu />
+          </Drawer>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 }

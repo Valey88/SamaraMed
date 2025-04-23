@@ -24,6 +24,11 @@ const BurgerMenu = () => {
             Контакты
           </Link>
         </ListItem>
+        <ListItem>
+          <Link style={{ color: "#1E90FF", marginLeft: 2 }} to="/delivery">
+            Доставка
+          </Link>
+        </ListItem>
       </List>
     </Box>
   );

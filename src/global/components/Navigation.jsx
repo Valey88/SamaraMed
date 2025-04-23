@@ -1,4 +1,4 @@
-import { Box, Paper } from "@mui/material";
+import { Box, Button, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
@@ -24,6 +24,9 @@ const Navigation = () => {
       {/* <Link to="/about">О нас</Link> */}
       <Link to="/contacts" style={{ color: "#1E90FF", fontSize: "20px" }}>
         Контакты
+      </Link>
+      <Link to="/delivery" style={{ color: "#1E90FF", fontSize: "20px" }}>
+        Доставка
       </Link>
     </Box>
   );

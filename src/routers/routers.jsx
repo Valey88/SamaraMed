@@ -9,6 +9,7 @@ import Deteils from "../page/deteils/Deteils";
 import { Navigate } from "react-router-dom";
 import Contacts from "../page/contacts/Contacts";
 import LayoutWrapper from "../global/LayoutWrapper";
+import Delivery from "../page/delivery/Delivery";
 // import NotFound from "../pages/notfound/NotFound";
 
 export const router = createBrowserRouter([
@@ -57,6 +58,14 @@ export const router = createBrowserRouter([
     element: (
       <LayoutWrapper>
         <Contacts />
+      </LayoutWrapper>
+    ), // Исправлено имя компонента
+  },
+  {
+    path: "/delivery", // динамический маршрут
+    element: (
+      <LayoutWrapper>
+        <Delivery />
       </LayoutWrapper>
     ), // Исправлено имя компонента
   },

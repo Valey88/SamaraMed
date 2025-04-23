@@ -34,7 +34,7 @@ const Logo = () => {
       <Box sx={{ width: "50%" }}>
         <Typography
           variant="h4"
-          sx={{ color: "#1E90FF", fontSize: { xs: "20px", md: "40px" } }}
+          sx={{ color: "#1E90FF", fontSize: { xs: "20px", md: "30px" } }}
         >
           SamaraMed
         </Typography>
