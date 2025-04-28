@@ -10,6 +10,8 @@ import { Navigate } from "react-router-dom";
 import Contacts from "../page/contacts/Contacts";
 import LayoutWrapper from "../global/LayoutWrapper";
 import Delivery from "../page/delivery/Delivery";
+import Certificate from "../page/certificate/Certificate";
+import PrivacyPolicy from "../page/PrivacyPolicy/PrivacyPolicy";
 // import NotFound from "../pages/notfound/NotFound";
 
 export const router = createBrowserRouter([
@@ -21,14 +23,14 @@ export const router = createBrowserRouter([
       </LayoutWrapper>
     ),
   },
-  //   {
-  //     path: "/about", // динамический маршрут
-  //     element: (
-  //       <LayoutWrapper>
-  //         <About />
-  //       </LayoutWrapper>
-  //     ), // Исправлено имя компонента
-  //   },
+  {
+    path: "/privacy-policy", // динамический маршрут
+    element: (
+      <LayoutWrapper>
+        <PrivacyPolicy />
+      </LayoutWrapper>
+    ), // Исправлено имя компонента
+  },
   {
     path: "/returnpolicy", // динамический маршрут
     element: (
@@ -45,14 +47,14 @@ export const router = createBrowserRouter([
       </LayoutWrapper>
     ), // Исправлено имя компонента
   },
-  //   {
-  //     path: "/certificate", // динамический маршрут
-  //     element: (
-  //       <LayoutWrapper>
-  //         <Electronic_certificate />
-  //       </LayoutWrapper>
-  //     ), // Исправлено имя компонента
-  //   },
+  {
+    path: "/certificate", // динамический маршрут
+    element: (
+      <LayoutWrapper>
+        <Certificate />
+      </LayoutWrapper>
+    ), // Исправлено имя компонента
+  },
   {
     path: "/contacts", // динамический маршрут
     element: (

@@ -97,7 +97,7 @@ export default function Footer() {
                 fontSize: { xs: "1rem", md: "1.2rem" },
               }}
             >
-              +7 (999) 999 3091
+              +7 (903) 088 3091
             </Typography>
           </Box>
         </Container>
@@ -123,7 +123,7 @@ export default function Footer() {
             variant="body2"
             sx={{ color: "#ffffff", fontSize: { xs: "0.9rem", md: "1rem" } }}
           >
-            © 2024 ООО “МедТехника”. Все права защищены.
+            © 2024 ИП “SamaraMed”. Все права защищены.
           </Typography>
           <Link
             href="/privacy-policy"

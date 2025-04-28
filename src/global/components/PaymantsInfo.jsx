@@ -79,7 +79,7 @@ export default function PaymantsInfo() {
               Новая система оплаты покупок на нашем сайте с помощью электронного
               социального сертификата.
             </Typography>
-            {/* <Button
+            <Button
               sx={{
                 display: "flex",
                 justifyContent: "left",
@@ -95,7 +95,7 @@ export default function PaymantsInfo() {
               }}
             >
               Подробнее
-            </Button> */}
+            </Button>
           </Box>
         </Box>
       </Box>
