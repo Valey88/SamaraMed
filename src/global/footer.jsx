@@ -126,7 +126,7 @@ export default function Footer() {
             © 2024 ИП “SamaraMed”. Все права защищены.
           </Typography>
           <Link
-            href="/privacy-policy"
+            href="/privacy/policy"
             sx={{
               color: "#ffffff",
               fontSize: { xs: "0.9rem", md: "1rem" },

@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: "/privacy-policy", // динамический маршрут
+    path: "/privacy/policy", // динамический маршрут
     element: (
       <LayoutWrapper>
         <PrivacyPolicy />
