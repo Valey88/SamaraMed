@@ -123,7 +123,7 @@ export default function Footer() {
             variant="body2"
             sx={{ color: "#ffffff", fontSize: { xs: "0.9rem", md: "1rem" } }}
           >
-            © 2024 ИП “SamaraMed”. Все права защищены.
+             ИП Байгузова «SamaraMed». Все права защищены.
           </Typography>
           <Link
             href="/privacy/policy"
