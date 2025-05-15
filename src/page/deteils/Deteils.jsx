@@ -81,7 +81,7 @@ export default function Details() {
               fontStyle: "italic",
             }}
           >
-            ИП Байгузова «SamaraMed»
+            ИП Байгузова Д.А. «SamaraMed»
           </Typography>
         </Box>
         <Box
