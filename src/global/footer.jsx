@@ -123,19 +123,45 @@ export default function Footer() {
             variant="body2"
             sx={{ color: "#ffffff", fontSize: { xs: "0.9rem", md: "1rem" } }}
           >
-             ИП Байгузова «SamaraMed». Все права защищены.
+            ИП Байгузова «SamaraMed». Все права защищены.
           </Typography>
-          <Link
-            href="/privacy/policy"
-            sx={{
-              color: "#ffffff",
-              fontSize: { xs: "0.9rem", md: "1rem" },
-              textDecoration: "none",
-              "&:hover": { textDecoration: "underline" },
-            }}
-          >
-            Политика конфиденциальности
-          </Link>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+            <Link
+              href="/privacy/policy"
+              sx={{
+                color: "#ffffff",
+                fontSize: { xs: "0.9rem", md: "1rem" },
+                textDecoration: "none",
+                "&:hover": { textDecoration: "underline" },
+              }}
+            >
+              Политика конфиденциальности
+            </Link>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 1,
+                ml: { sm: 2 },
+                alignItems: "center",
+              }}
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                alt="Visa"
+                style={{ height: "40px" }}
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                alt="MasterCard"
+                style={{ height: "40px" }}
+              />
+              <img
+                src="https://online-check.business.ru/wp-content/uploads/2019/10/PAYKEEPER-optimized.png"
+                alt="PayKeeper"
+                style={{ height: "50px" }}
+              />
+            </Box>
+          </Box>
         </Container>
       </Box>
     </Box>
