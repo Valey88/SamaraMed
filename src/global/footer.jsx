@@ -88,6 +88,7 @@ export default function Footer() {
               gap: { xs: "15px", md: "20px" },
               justifyContent: "center",
               alignItems: "center",
+              width: { xs: "100%", lg: "35%" },
             }}
           >
             <Typography
@@ -99,6 +100,32 @@ export default function Footer() {
             >
               +7 (903) 088 3091
             </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              width: { xs: "100%", lg: "35%" },
+              gap: 1,
+              ml: { sm: 2 },
+              alignItems: "center",
+              flexDirection: { xs: "column", sm: "column" },
+            }}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+              alt="Visa"
+              style={{ height: "40px" }}
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+              alt="MasterCard"
+              style={{ height: "40px" }}
+            />
+            <img
+              src="https://online-check.business.ru/wp-content/uploads/2019/10/PAYKEEPER-optimized.png"
+              alt="PayKeeper"
+              style={{ height: "50px" }}
+            />
           </Box>
         </Container>
       </Box>
@@ -137,30 +164,6 @@ export default function Footer() {
             >
               Политика конфиденциальности
             </Link>
-            <Box
-              sx={{
-                display: "flex",
-                gap: 1,
-                ml: { sm: 2 },
-                alignItems: "center",
-              }}
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
-                alt="Visa"
-                style={{ height: "40px" }}
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
-                alt="MasterCard"
-                style={{ height: "40px" }}
-              />
-              <img
-                src="https://online-check.business.ru/wp-content/uploads/2019/10/PAYKEEPER-optimized.png"
-                alt="PayKeeper"
-                style={{ height: "50px" }}
-              />
-            </Box>
           </Box>
         </Container>
       </Box>
